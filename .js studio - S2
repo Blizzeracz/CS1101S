@@ -1,0 +1,61 @@
+//1
+function biggie_size(combo) {
+    return combo + 4 ;
+}
+
+biggie_size(4);
+
+
+//2
+function unbiggie_size(combo) {
+    return combo - 4;
+}
+
+unbiggie_size(8);
+
+
+//3
+function is_biggie_size(combo) {
+    return combo > 4 ? true : false ;
+}
+
+is_biggie_size(6);
+
+
+//4
+function combo_price(combo) {
+    return is_biggie_size(combo) ? unbiggie_size(combo) * 1.17 + 0.5 : combo * 1.17;
+}
+
+combo_price(1);
+
+
+//5
+function empty_order() {
+    return 0;
+}
+
+empty_order();
+
+
+//6
+function add_to_order(order, combo){
+    return order * 10 + combo;
+}
+
+add_to_order(5,1);
+
+
+//7
+function last_combo(order){
+    return order % 10;
+}
+
+last_combo(12432);
+
+//8
+function other_combos(combo){
+    return (combo - last_combo(combo)) / 10;
+}
+
+other_combos(32332);
